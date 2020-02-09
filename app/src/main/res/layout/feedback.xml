@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/back_feedback_1"
+            android:src="@drawable/ic_back"
+            android:padding="15dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginRight="?attr/actionBarSize"
+            android:text="Qayta aloqa"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/name_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/feedback_back_active"
+        android:hint="F.I.O."
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/feedback_light"
+        android:inputType="textPersonName"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/checkbox_feedback"
+        android:text="Bog'lanish uchun"
+        android:textColor="@color/feedback_dark"
+        android:buttonTint="@color/feedback_light"
+        />
+
+    <br.com.sapereaude.maskedEditText.MaskedEditText
+        android:id="@+id/phone_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/feedback_back_disable"
+        android:padding="10dp"
+        android:textColor="@color/feedback_dark"
+        android:textColorHint="@color/feedback_light"
+        android:enabled="false"
+        android:inputType="phone"
+        mask:allowed_chars="1234567890"
+        android:hint="901234567"
+        mask:mask="+998(##)###-##-##"
+        />
+
+    <EditText
+        android:id="@+id/content_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/feedback_back_active"
+        android:hint="Taklif va shikoyatlaringizni kiriting..."
+        android:minHeight="150dp"
+        android:maxHeight="200dp"
+        android:padding="10dp"
+        android:gravity="top"
+        android:textColor="@color/black"
+        android:textColorHint="@color/feedback_light"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feedback_send_button"
+        android:text="Jo'natish"
+        android:id="@+id/feedback_send_button"
+        android:textSize="20dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="20dp"
+        />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:text="Ortga qaytish"
+        android:id="@+id/back_feedback_2"
+        android:textSize="14dp"
+        android:textColor="#FFDB3838"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

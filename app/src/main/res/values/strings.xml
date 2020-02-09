@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">e-Journal</string>
+    <string name="lang" translatable="false">O\'zbek</string>
+    <string name="text_logo" translatable="false">Android Tutorials Hub</string>
+    <string name="text_hint_email" translatable="false">Email</string>
+    <string name="text_hint_password" translatable="false">Password</string>
+    <string name="text_login" translatable="false">Login</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="open_drawer" translatable="false">Open Drawer</string>
+    <string name="close_drawer" translatable="false">Close Drawer</string>
+
+    <!-- Settings -->
+    <string name="theme" translatable="false">"Tungi rejim"</string>
+    <string name="current_lang" translatable="false">Til</string>
+    <string name="notify" translatable="false">Eslatmalar</string>
+
+    <!-- Navigation Menu -->
+    <string name="davomat" translatable="false">Davomat</string>
+    <string name="baholar" translatable="false">Baholar</string>
+    <string name="vazifalar" translatable="false">Vazifalar</string>
+    <string name="o_qituvchilar" translatable="false">O\'qituvchilar</string>
+    <string name="e_lonlar" translatable="false">E\'lonlar</string>
+    <string name="sozlamalar" translatable="false">Sozlamalar</string>
+    <string name="qayta_aloqa" translatable="false">Qayta aloqa</string>
+    <string name="qo_llanma" translatable="false">Qo\'llanma</string>
+
+    <!-- Login -->
+    <string name="login_error" translatable="false">Bunday profil yo\'q</string>
+    <string name="login_done" translatable="true">Profil qo\'shildi</string>
+
+</resources>

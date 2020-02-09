@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8194CF</color>
+    <color name="colorPrimaryDark">#22328A</color>
+    <color name="colorAccent">#FFAE76</color>
+    <color name="colorAccentDark">#F4866D</color>
+    <color name="dark_day_background">#F1F1F8</color>
+
+
+    <!-- 1st Gradient color -->
+    <color name="colorPurple_A400">#D500F9</color>
+    <color name="colorPurple_900">#4A148C</color>
+    <!-- ./ 1st Gradient color -->
+
+    <!-- 2nd Gradient color -->
+    <color name="colorAmber_A400">#2B2B2B</color>
+    <color name="colorAmber_900">#000000</color>
+    <!-- ./ 2nd Gradient color -->
+
+    <!-- 3rd Gradient color -->
+    <color name="colorGreen_A400">#9900E676</color>
+    <color name="colorGreen_900">#991B5E20</color>
+    <!-- ./ 3rd Gradient color -->
+
+    <!-- 4th Gradient color -->
+    <color name="colorRed_A400">#99FF1744</color>
+    <color name="colorRed_900">#99B71C1C</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <!-- ./ 4th Gradient color -->
+
+    <!-- Main Fragment Colors-->#f47a5c
+    <color name="davomat_high">#f47a5c</color>
+    <color name="baholar_high">#9693fb</color>
+    <color name="gray_light">#cccccc</color>
+
+    <!-- Color ranks-->
+    <color name="rank_no">#E2C612</color>
+    <color name="rank_no_ic">#E97D01</color>
+    <color name="rank_3">#FB4E4F</color>
+    <color name="rank_3_ic">#AE1617</color>
+    <color name="rank_4">#2C4787</color>
+    <color name="rank_4_ic">#152D65</color>
+    <color name="rank_5">#14B70F</color>
+    <color name="rank_5_ic">#0C7808</color>
+
+    <color name="transparent">#0000</color>
+    <color name="toolbar_day">#F8934F</color>
+    <color name="toolbar_day_light">#33F8934F</color>
+
+    <color name="color1">#424549</color>
+    <color name="color2">#7e455e</color>
+    <color name="color3">#796e25</color>
+    <color name="color4">#59717c</color>
+    <color name="color5">#795525</color>
+
+    <color name="profile_pink">#5B0909</color>
+    <color name="profile_blue1">#0E1E4B</color>
+
+    <color name="feedback_dark">#707070</color>
+    <color name="feedback_light">#C8C8C8</color>
+</resources>

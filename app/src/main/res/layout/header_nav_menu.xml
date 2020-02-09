@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="250dp"
+    android:layout_width="250dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/menu"
+    android:background="@color/toolbar_day"
+    >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/menus"
+        android:layout_alignParentTop="true"
+        android:background="@color/toolbar_day"
+        >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/logo"
+        android:src="@drawable/ic_logo_app"
+        android:padding="50dp"
+        android:background="@color/white"
+        android:layout_marginBottom="10dp"
+        />
+
+<!--    <ImageView-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:id="@+id/attendance_nav"-->
+<!--        android:src="@drawable/ic_attend"-->
+<!--        android:padding="6dp"-->
+<!--        android:tint="@color/white"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:onClick="attend"-->
+<!--        />-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:id="@+id/rank_nav"-->
+<!--        android:src="@drawable/ic_rank"-->
+<!--        android:tint="@color/white"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:padding="6dp"-->
+<!--        />-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:id="@+id/task_nav"-->
+<!--        android:src="@drawable/ic_task"-->
+<!--        android:padding="6dp"-->
+<!--        android:tint="@color/white"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        />-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:id="@+id/notice_nav"-->
+<!--        android:src="@drawable/ic_notice"-->
+<!--        android:padding="6dp"-->
+<!--        android:tint="@color/white"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        />-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:id="@+id/settings_nav"-->
+<!--        android:src="@drawable/ic_settings"-->
+<!--        android:padding="6dp"-->
+<!--        android:tint="@color/white"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        />-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:id="@+id/feedbck_nav"-->
+<!--        android:src="@drawable/ic_feedback"-->
+<!--        android:padding="6dp"-->
+<!--        android:tint="@color/white"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        />-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:id="@+id/faq_nav"-->
+<!--        android:src="@drawable/ic_question"-->
+<!--        android:padding="6dp"-->
+<!--        android:tint="@color/white"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        />-->
+    </LinearLayout>
+
+</RelativeLayout>

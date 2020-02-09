@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F5">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/setting_header">
+    </ImageView>
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/theme_settings"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/theme"
+            android:textColor="@color/black"
+            android:textSize="25dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/theme_sub_settings"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="200dp"
+            android:text="Agar dastur ko'rinishini o'zgartirish uchun"
+            android:textColor="@color/feedback_dark"
+            android:textSize="14dp"/>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notify_settings"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/notify"
+        android:textColor="@color/black"
+        android:textSize="25dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notify_sub_settings"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="200dp"
+        android:text="Sinf yangiliklari va e`lonlar haqida xabardor bo`ling."
+        android:textColor="@color/feedback_dark"
+        android:textSize="14dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/language"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/language_settings"
+        android:text="@string/current_lang"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_alignParentLeft="true"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/language_selected_settings"
+            android:text="@string/lang"
+            android:textColor="@color/feedback_dark"
+            android:layout_alignParentRight="true"
+            android:textSize="22dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

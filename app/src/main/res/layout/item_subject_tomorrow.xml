@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/item_rank_today"
+    android:layout_width="120dp"
+    android:layout_height="180dp"
+    android:layout_margin="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:minHeight="120dp"
+    android:maxHeight="180dp"
+    android:background="@drawable/back_tomorrow_task_item"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/subject_layout"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_subject"
+            android:id="@+id/subject_ico"
+            android:tint="@color/toolbar_day"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subject_name"
+            android:textColor="@color/black"
+            android:text="Odam va uning salomatligi"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/subject_ico"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/subject_line"
+        android:layout_below="@id/subject_layout"
+        android:background="@color/toolbar_day"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp"/>
+
+    <TextView
+        android:id="@+id/subject_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subject_line"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="Qon ishlab chiqaruvchi a'zolar va ularning oziqlanishiQon ishlab chiqaruvchi a'zolar va ularning oziqlanishi"
+        android:textSize="10dp"
+        android:maxLines="5"
+        android:ellipsize="end"
+        />
+
+
+</RelativeLayout>

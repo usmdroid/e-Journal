@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">e-Journal</string>
+    <string name="lang" translatable="false">Русский</string>
+    <string name="text_logo" translatable="false">Android Tutorials Hub</string>
+    <string name="text_hint_email" translatable="false">Email</string>
+    <string name="text_hint_password" translatable="false">Password</string>
+    <string name="text_login" translatable="false">Login</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="open_drawer" translatable="false">Open Drawer</string>
+    <string name="close_drawer" translatable="false">Close Drawer</string>
+
+    <!-- Settings -->
+    <string name="theme" translatable="false">"Ночной режим"</string>
+    <string name="current_lang" translatable="false">Язык</string>
+    <string name="notify" translatable="false">Уведомления</string>
+
+    <!-- Navigation Menu -->
+    <string name="davomat" translatable="false">Посещаемость</string>
+    <string name="baholar" translatable="false">Оценки</string>
+    <string name="vazifalar" translatable="false">Задания</string>
+    <string name="o_qituvchilar" translatable="false">Учитель</string>
+    <string name="e_lonlar" translatable="false">Сообщения</string>
+    <string name="sozlamalar" translatable="false">Настройки</string>
+    <string name="qayta_aloqa" translatable="false">Обратная связь</string>
+    <string name="qo_llanma" translatable="false">Руководство</string>
+
+    <!-- Login -->
+    <string name="login_error" translatable="false">Нет такого аккаунта</string>
+    <string name="login_done" translatable="true">Успешно добавлено</string>
+
+</resources>

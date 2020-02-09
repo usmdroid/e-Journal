@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/attendance_nav_bar" android:title="@string/davomat" android:icon="@drawable/ic_attend"/>
+    <item android:id="@+id/rank_nav_bar" android:title="@string/baholar" android:icon="@drawable/ic_rank"/>
+    <item android:id="@+id/task_nav_bar" android:title="@string/vazifalar" android:icon="@drawable/ic_task"/>
+    <item android:id="@+id/teacher_nav_bar" android:title="@string/o_qituvchilar" android:icon="@drawable/ic_teacher"/>
+    <item android:id="@+id/notice_nav_bar" android:title="@string/e_lonlar" android:icon="@drawable/ic_notice"/>
+    <item android:id="@+id/settings_nav_bar" android:title="@string/sozlamalar" android:icon="@drawable/ic_settings"/>
+    <item android:id="@+id/feedback_nav_bar" android:title="@string/qayta_aloqa" android:icon="@drawable/ic_feedback"/>
+    <item android:id="@+id/faq_nav_bar" android:title="@string/qo_llanma" android:icon="@drawable/ic_question"/>
+
+</menu>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="170dp"
+    android:layout_height="100dp"
+    android:layout_margin="10dp"
+    android:id="@+id/back_item_profile"
+    android:background="@drawable/ic_item_profile_1"
+    android:layout_centerVertical="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/identify">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/pic_profile"
+            android:background="@drawable/rank_tasks_navigation_button_group"
+            android:src="@drawable/ic_profile_pic"
+            android:padding="7dp"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_pupil"
+            android:text="Amir Usmanov"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/profile_pink"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/identify"
+        android:layout_alignParentLeft="true"
+        >
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:id="@+id/ic_school"
+            android:background="@drawable/ic_school"
+            android:layout_marginRight="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="251"
+            android:id="@+id/school_number"
+            android:textColor="@color/profile_pink"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/identify"
+        android:layout_alignParentRight="true"
+        >
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:id="@+id/ic_class"
+            android:background="@drawable/ic_class"
+            android:layout_marginRight="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1-'A'"
+            android:id="@+id/class_num"
+            android:textColor="@color/profile_pink"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

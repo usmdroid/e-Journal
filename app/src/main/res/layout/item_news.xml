@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/news_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="15dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/news_item_image"
+        android:background="@color/rank_3"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/news_item_theme"
+        android:layout_below="@+id/news_item_image"
+        android:text="Bugun Maktabda"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_item_excerpt"
+            android:layout_below="@id/news_item_theme"
+            android:maxLines="3"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the sdsdfsdfsdfsdfsdfsdfsfsfsdfsdf1500s, "
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_item_date"
+            android:layout_below="@id/news_item_excerpt"
+            android:text="12:05 30.01.2020"
+            android:background="@drawable/rank_tasks_navigation_button_group"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="145.934dp"
+    android:height="113.886dp"
+    android:viewportWidth="145.934"
+    android:viewportHeight="113.886">
+  <path
+      android:pathData="M30.7,5.998h84.528c11.986,0 21.7,12.745 21.7,28.466L136.928,73.418c0,15.721 -9.717,28.466 -21.7,28.466L30.7,101.884C18.717,101.884 9,89.14 9,73.418L9,34.464C9,18.743 18.717,5.998 30.7,5.998Z"
+      android:fillColor="#fee1da"/>
+  <path
+      android:pathData="M105.845,6.17C109.891,6.17 116.066,5.133 124.607,9.086a31.991,31.991 0,0 1,5.749 5.426c3.27,3.89 5.162,10.951 5.942,14.339C134.06,36.037 125.133,59.342 112.287,59.342c-7.4,0 -13.043,-3.473 -21.549,-10.371S70.353,34.554 74.301,24.479 92.999,6.17 105.845,6.17Z"
+      android:fillColor="#fed7d1"/>
+  <path
+      android:pathData="M60,20.636L86.046,20.636A3.25,3.25 0,0 1,89.296 23.886L89.296,58.886A3.25,3.25 0,0 1,86.046 62.136L60,62.136A3.25,3.25 0,0 1,56.75 58.886L56.75,23.886A3.25,3.25 0,0 1,60 20.636z"
+      android:strokeWidth="1.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#f47a5c"/>
+  <path
+      android:pathData="M63.449,26.318a7.842,7.842 0,0 1,0.941 1.592,14.911 14.911,0 0,1 1.133,2.594 38.13,38.13 0,0 1,1.537 -4.005,26.787 26.787,0 0,1 1.669,-2.947"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#f47a5c"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M63.429,40.77a7.842,7.842 0,0 1,0.941 1.592,14.911 14.911,0 0,1 1.133,2.594 38.13,38.13 0,0 1,1.537 -4.005,22.313 22.313,0 0,1 1.585,-2.641"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#f47a5c"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M63.738,52.025h6.395"
+      android:strokeWidth="1.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#f47a5c"
+      android:strokeLineCap="round"/>
+</vector>
