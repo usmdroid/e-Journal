@@ -28,6 +28,8 @@
             android:theme="@style/AppTheme.SlidrActivityTheme" />
         <activity android:name=".Feedback" />
         <activity android:name=".Settings" />
+        <activity android:name=".Teachers" />
+        <activity android:name=".Attendance" />
         <activity android:name=".add_profile" />
     </application>
 

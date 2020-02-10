@@ -4,6 +4,8 @@
     android:orientation="vertical"
     android:layout_width="170dp"
     android:layout_height="100dp"
+    android:gravity="center"
+    android:layout_gravity="center_horizontal"
     android:layout_margin="10dp"
     android:id="@+id/back_item_profile"
     android:background="@drawable/ic_item_profile_1"

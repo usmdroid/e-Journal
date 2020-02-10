@@ -17,7 +17,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import com.tomreaddle.e_journal.Services.MySharedPreferences;
+import com.tomreaddle.e_journal.Services.MySharedPreferencesSettings;
 
 public class Settings extends AppCompatActivity {
 
@@ -27,7 +27,7 @@ public class Settings extends AppCompatActivity {
     AlertDialog dialog;
     AlertDialog.Builder builder;
     String[] lang = {"O'zbek" , "Русский" };
-    MySharedPreferences mySharedPreferences ;
+    MySharedPreferencesSettings mySharedPreferences ;
 
 
     @Override
@@ -38,7 +38,7 @@ public class Settings extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
     {
-        mySharedPreferences = new MySharedPreferences(this);
+        mySharedPreferences = new MySharedPreferencesSettings(this);
         setLocale(mySharedPreferences.getLang());
     }
 
@@ -66,11 +66,9 @@ public class Settings extends AppCompatActivity {
                         switch (which){
                             case 0:
                                 lang_select = "uz";
-                                Toast.makeText(Settings.this, lang_select, Toast.LENGTH_SHORT).show();
                                 break;
                             case 1:
                                 lang_select = "ru";
-                                Toast.makeText(Settings.this, lang_select, Toast.LENGTH_SHORT).show();
                                 break;
                         }
                     }
@@ -83,7 +81,6 @@ public class Settings extends AppCompatActivity {
                         mySharedPreferences.setLang(lang_select);
                         String current_lang = mySharedPreferences.getLang();
                         setLocale(current_lang);
-                        Toast.makeText(Settings.this, mySharedPreferences.getLang()+"Lang", Toast.LENGTH_SHORT).show();
                         finish();
                         startActivity(new Intent(Settings.this , Settings.class));
                     }

@@ -2,7 +2,6 @@ package com.tomreaddle.e_journal;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Build;
@@ -29,9 +28,10 @@ import androidx.appcompat.widget.Toolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.tomreaddle.e_journal.Fragment.mainProfiles;
+import com.tomreaddle.e_journal.Fragment.mainProfilesBackup;
 import com.tomreaddle.e_journal.Fragment.newsFrag;
 import com.tomreaddle.e_journal.Fragment.rankTasksFrag;
-import com.tomreaddle.e_journal.Services.MySharedPreferences;
+import com.tomreaddle.e_journal.Services.MySharedPreferencesSettings;
 
 import java.util.Locale;
 
@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setLocale();
         setContentView(R.layout.drawer_nav);
+        checkAUTH();
 
         setRankTasksFrag();
         toolbar = (androidx.appcompat.widget.Toolbar)findViewById(R.id.toolbar);
@@ -94,6 +95,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 return true;
             }
         });
+    }
+
+    private void checkAUTH() {
+        MySharedPreferencesSettings mySharedPreferences = new MySharedPreferencesSettings(this);
+        if(mySharedPreferences.getToken().equals("")){
+            finish();
+            startActivity(new Intent(MainActivity.this , add_profile.class));
+        }
     }
 
     public void setPupilsPage(){
@@ -148,19 +157,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         switch (id){
             case R.id.attendance_nav_bar:
-                Toast.makeText(this, "Attendance", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.rank_nav_bar:
-                Toast.makeText(this, "Rank", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.task_nav_bar:
-                Toast.makeText(this, "Task", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, Attendance.class));
                 break;
             case R.id.teacher_nav_bar:
-                Toast.makeText(this, "Teacher", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.notice_nav_bar:
-                Toast.makeText(this, "Notice", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, Teachers.class));
                 break;
             case R.id.settings_nav_bar:
                 startActivity(new Intent(MainActivity.this, Settings.class));
@@ -179,14 +179,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public void setLocale(){
 
-        MySharedPreferences sPref = new MySharedPreferences(this);
+        MySharedPreferencesSettings sPref = new MySharedPreferencesSettings(this);
         String locale = sPref.getLang();
         Resources res = getResources();
         DisplayMetrics dm = res.getDisplayMetrics();
         Configuration conf = res.getConfiguration();
         conf.setLocale(new Locale(locale.toLowerCase()));
         res.updateConfiguration(conf , dm);
-        Toast.makeText(this, locale, Toast.LENGTH_SHORT).show();
+    }
+
+    private void setToken(){
+        MySharedPreferencesSettings mySharedPreferences = new MySharedPreferencesSettings(this);
+        if(!mySharedPreferences.getToken().isEmpty()){
+            mySharedPreferences.setToken("null");
+            Toast.makeText(this, mySharedPreferences.getToken(), Toast.LENGTH_SHORT).show();
+            if(mySharedPreferences.getToken()== null)  startActivity(new Intent(MainActivity.this , add_profile.class));
+        }
+
     }
 
 }

@@ -13,26 +13,13 @@
         android:id="@+id/header"
         android:background="@drawable/ic_profiles"
         >
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/back_add"
-            android:src="@drawable/ic_back"
-            android:padding="15dp"
-            android:layout_margin="5dp"
-            android:tint="@color/white"
-            android:onClick="back"
-            />
-
         <TextView
             android:layout_height="?attr/actionBarSize"
             android:layout_width="match_parent"
-            android:text="Qayta a'loqa"
+            android:text="@string/login"
             android:textAlignment="center"
             android:textSize="36sp"
             android:textColor="@color/white"
-            android:layout_marginRight="?attr/actionBarSize"
             />
 
     </LinearLayout>
@@ -79,7 +66,7 @@
         android:background="@drawable/feedback_send_button"
         android:id="@+id/add_add_button"
         android:textSize="20dp"
-        android:text="Qo'shish"
+        android:text="@string/add"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
         android:layout_marginTop="20dp"

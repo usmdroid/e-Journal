@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/dark_day_background"
-    tools:context=".Fragment.mainProfiles">
+    tools:context=".Fragment.mainProfilesBackup">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,49 +30,231 @@
                     android:id="@+id/name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Eshonov Bahodir"
+                    android:text="Abror Xamidov"
                     android:textColor="@color/white"
                     android:textSize="28sp" />
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
                 <TextView
-                    android:id="@+id/info"
+                    android:id="@+id/info_school"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/gray_light"
-                    android:text="Maktab: 241   Sinf: 4 A" />
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:text="Maktab: 301"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/info_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:text="Sinf: 6 A"
+                    android:layout_alignParentRight="true"/>
+                </RelativeLayout>
             </LinearLayout>
 
-            <ImageView
-                android:id="@+id/picture"
+
+            <com.jackandphantom.circularimageview.CircleImage
+                android:id="@+id/image"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="15dp"
-                android:background="@drawable/circle" />
+                android:src="@drawable/image_profile"
+                />
 
         </RelativeLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/rec_profiles"
-            android:layout_below="@+id/header"
-            android:layout_above="@+id/add_profile_button"
-            android:layout_marginBottom="20dp"
-            android:textAlignment="center"/>
-
-        <Button
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/add_profile_button"
-            android:text="Qo'shish"
-            android:background="@drawable/feedback_send_button"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="20dp"
-            />
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/adress_school_layout"
+            android:background="@drawable/back_back_button"
+            android:layout_below="@+id/header">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:id="@+id/num_school"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_school"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/school"
+                android:text="301"
+                android:fontFamily="sans-serif-black"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:layout_toRightOf="@+id/num_school">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sergeli tumani, Toshkent"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:id="@+id/adress"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Toshkent shahar, Sergeli tuman, Sergeli 8-A, Ezgulik MFY"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:paddingRight="10dp"
+                    android:textSize="16dp"
+                    android:id="@+id/adress_full"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/mail_school"
+            android:background="@drawable/back_back_button"
+            android:layout_below="@+id/adress_school_layout">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/phone_school"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_phone"/>
+            </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+998712516969"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="20dp"
+                    android:layout_toRightOf="@+id/phone_school"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:id="@+id/phone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/back_back_button"
+            android:id="@+id/mail_layout"
+            android:layout_below="@+id/mail_school">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/mail_school_ic"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_email"/>
+            </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="301umumtalim@mail.ru"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="20dp"
+                    android:layout_toRightOf="@+id/mail_school_ic"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:id="@+id/mail"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/back_back_button"
+            android:layout_below="@+id/mail_layout">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/director_school_ic"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_director"/>
+            </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sindarova Gavhar"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="20dp"
+                    android:layout_toRightOf="@+id/director_school_ic"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:id="@+id/director"/>
+
+        </RelativeLayout>
 
     </RelativeLayout>
 </FrameLayout>

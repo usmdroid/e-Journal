@@ -21,7 +21,7 @@
         android:layout_height="?attr/actionBarSize"
         android:id="@+id/toolbar"
         android:background="@color/toolbar_day"
-        app:title="Asosiy"
+        app:title="@string/main"
         android:titleTextColor="@color/white"
         android:popupTheme="@style/Theme.AppCompat.Light"
         tools:targetApi="lollipop"

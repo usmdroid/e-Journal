@@ -30,4 +30,20 @@
     <string name="login_error" translatable="false">Нет такого аккаунта</string>
     <string name="login_done" translatable="true">Успешно добавлено</string>
 
+    <!-- Info Profile -->
+    <string name="school" translatable="false">Школа</string>
+    <string name="class_num" translatable="false">Класс</string>
+    <string name="login">Войти в систему</string>
+    <string name="add">Войти</string>
+
+    <!-- MENU -->
+    <string name="main">Главный</string>
+    <string name="news">Новости</string>
+    <string name="info">Информация</string>
+    <string name="faq_text">Программа в данный момент находится в тестовом режиме. Пробелы работают на данных</string>
+    <string name="upload_error">Ошибка при получении данные</string>
+    <string name="connecting_error">Ошибка подключения</string>
+    <string name="sub_davomat">Пропущенные уроки</string>
+
+
 </resources>

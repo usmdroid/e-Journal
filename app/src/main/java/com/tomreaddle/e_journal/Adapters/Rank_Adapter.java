@@ -44,8 +44,8 @@ public class Rank_Adapter extends RecyclerView.Adapter<Rank_Adapter.MyViewHolder
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        holder.subject.setText(data.get(position).getSubject());
-        holder.teacher.setText(data.get(position).getTeacher());
+        holder.subject.setText(data.get(position).getsubject_name());
+        holder.teacher.setText(data.get(position).getTeacher_fname() + " " + data.get(position).getTeacher_lname());
         holder.theme.setText(data.get(position).getTheme());
         holder.homework.setText(data.get(position).getHomework());
         holder.rank.setText(data.get(position).getRank());

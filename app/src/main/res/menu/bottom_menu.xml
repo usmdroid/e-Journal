@@ -7,7 +7,7 @@
         android:id="@+id/main"
         android:enabled="true"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="Asosiy"
+        android:title="@string/main"
         app:showAsAction="ifRoom"
         />
 
@@ -15,7 +15,7 @@
         android:id="@+id/info"
         android:enabled="true"
         android:icon="@drawable/ic_person_black_24dp"
-        android:title="Personal"
+        android:title="@string/news"
         app:showAsAction="ifRoom"
         />
 
@@ -23,7 +23,7 @@
         android:id="@+id/event"
         android:enabled="true"
         android:icon="@drawable/ic_event_black_24dp"
-        android:title="Maktab yangiliklari"
+        android:title="@string/info"
         app:showAsAction="ifRoom"
         />
 

@@ -1,9 +1,7 @@
-package com.tomreaddle.e_journal.Models;
+package com.tomreaddle.e_journal.API.Model;
 
-import java.util.Date;
-
-public class model_today_rank {
-    int id;
+public class TimeTable {
+    private int id;
     private String subject_name;
     private String teacher_fname;
     private String teacher_lname;
@@ -11,10 +9,10 @@ public class model_today_rank {
     private String homework;
     private String rank;
 
-    public model_today_rank() {
+    public TimeTable() {
     }
 
-    public model_today_rank(int id, String subject_name, String teacher_fname, String teacher_lname, String theme, String homework, String rank) {
+    public TimeTable(int id, String subject_name, String teacher_fname, String teacher_lname, String theme, String homework, String rank) {
         this.id = id;
         this.subject_name = subject_name;
         this.teacher_fname = teacher_fname;
@@ -28,7 +26,7 @@ public class model_today_rank {
         return id;
     }
 
-    public String getsubject_name() {
+    public String getSubject_name() {
         return subject_name;
     }
 

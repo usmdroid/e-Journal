@@ -12,14 +12,13 @@
         android:paddingTop="10dp"
         >
 
-        <androidx.viewpager.widget.ViewPager
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
+        <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewpager"
-            android:textAlignment="center"
-            android:overScrollMode="never"
-            android:clipToPadding="false"
-            android:foregroundGravity="center"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="30dp" />
 
     </LinearLayout>
 

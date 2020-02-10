@@ -5,6 +5,7 @@
     <string name="text_hint_email" translatable="false">Email</string>
     <string name="text_hint_password" translatable="false">Password</string>
     <string name="text_login" translatable="false">Login</string>
+    <string name="token" translatable="false">eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjlkZGJmNDM2NDgzNmFhNGEzZTNhNTUzZjY0Zjk2OTgyMWM4Mjc4ODc4OGVjODBhMmUwZDg1ZmZiZDEzMDY4Y2Q1NTMwODMxZTAxYWE2ZTgiLCJpYXQiOjE1ODExNjgzNTMsIm5iZiI6MTU4MTE2ODM1MywiZXhwIjoxNjEyNzkwNzUzLCJzdWIiOiI3Iiwic2NvcGVzIjpbXX0.w1uMbe57YlWAwoiS_RLyeOVvPuWi11UMIYQCrMMnVGU-D4LnKGSv9AKMfqihh4dvtUihhukSaadH1H-Jj-Cpy8l2qBogLIm2IeJ-JH7quCgDRpYZBzqtjCUuvOeLTFAm5WMB286VuyUUb5bB9NPYsAfSol6n1l-ATF_FweG7P7_-QRkAdUzidmS0R9SDXGy8nYGeopn552zVq6XM8iMw_Mg-7bfzruBVR0n-uXOLhp8ZhPdJe7AXPWxdgSnaL3pQXLLjrcPhmTifQ6Dfvo9cqzWQqC-LBPVSupZKM5KkajcvcMeUOfrGLAedoHce9RCONGbtO8jLsvwn9ZQSgG29W8zRUayxLYRR4Vj1c8lMFWudN5iTf4K0MeD_qvN_Sa4B92DhmaaYByW6ACL40DvxJG61fvf7FYWbvx1hqTe-5hdzZqWqFR0wvk_zEba844trL_wNFqpvhoJBiL4V9uDifP5K-8rvb2VfPzQM9u9wA5BlAJcXEgsTHAgacKQT9rENbv6J0WIp-U-n1KBQyhgVQQ-Qab8IoQzjQB5fOLPRZyMC7IjsCqdwlX8ImTlDaBcXxa6zegxoc2YmdsQQUBcjQVZf8tflJEnRyV0t4J83HMaArRmGYdHoz4sEX4DPnAP0wNX2GFXLQpnbXRxCyxz3OYLsa7r5wLb3Y34VBA8Cwfs</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
@@ -29,5 +30,21 @@
     <!-- Login -->
     <string name="login_error" translatable="false">Bunday profil yo\'q</string>
     <string name="login_done" translatable="true">Profil qo\'shildi</string>
+
+    <!-- Info Profile -->
+    <string name="school" translatable="false">Maktab</string>
+    <string name="class_num" translatable="false">Sinf</string>
+    <string name="login">Tizimga kirish</string>
+    <string name="add">Kirish</string>
+
+    <!-- MENU -->
+
+    <string name="main">Asosiy</string>
+    <string name="news">Yangiliklar</string>
+    <string name="info">Ma\'lumot</string>
+    <string name="faq_text">Dastur hozirda test rejimda ishlamoqda. Kamchiliklar ma\'lumotlar ustida ishlanmoqda</string>
+    <string name="upload_error">Ma\'lumot olishda xatolik</string>
+    <string name="connecting_error">Bo\'glanishda xatolik</string>
+    <string name="sub_davomat">Qoldirilgan darslar</string>
 
 </resources>

@@ -48,7 +48,7 @@
                 android:id="@+id/rank_teacher_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:gravity="left"
                 android:text="Shoqosimova Aziza"
                 android:textColor="@color/rank_no"
                 android:textSize="10sp" />
@@ -82,7 +82,7 @@
                 android:ellipsize="end"
                 android:text="Mirzo Muhammad Bobur hayoti va ijodi"
                 android:textColor="@color/rank_no"
-                android:textSize="8sp" />
+                android:textSize="10sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -111,9 +111,10 @@
                 android:gravity="center"
                 android:maxLines="2"
                 android:ellipsize="end"
+                android:fontFamily="sans-serif-black"
                 android:text="Muhammad Bobur hayoti va ijodini o'qish va g'azallaridan yodlash"
                 android:textColor="@color/rank_no"
-                android:textSize="8sp" />
+                android:textSize="10sp" />
         </LinearLayout>
 
         <LinearLayout

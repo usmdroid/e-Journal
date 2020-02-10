@@ -28,11 +28,9 @@ public class rankTasksFragTomorrow extends Fragment {
         list = new ArrayList<>();
 
         list.add(new model_tomorrow_task("Biologiya" , "Sut emizuvchilar va ularning yashash tarzi"));
-        list.add(new model_tomorrow_task("Biologiya" , "Sut emizuvchilar va ularning yashash tarzi"));
-        list.add(new model_tomorrow_task("Biologiya" , "Sut emizuvchilar va ularning yashash tarzi"));
-        list.add(new model_tomorrow_task("Biologiya" , "Sut emizuvchilar va ularning yashash tarzi"));
-        list.add(new model_tomorrow_task("Biologiya" , "Sut emizuvchilar va ularning yashash tarzi"));
-        list.add(new model_tomorrow_task("Biologiya" , "Sut emizuvchilar va ularning yashash tarzi"));
+        list.add(new model_tomorrow_task("Kimyo" , "Oksidlanish"));
+        list.add(new model_tomorrow_task("Huquq" , "Ma'muriy javobgarlik"));
+        list.add(new model_tomorrow_task("Matematika" , "Guruhlash"));
 
         RecyclerView recyclerView = view.findViewById(R.id.RecTasks);
         Task_Adapter adapter = new Task_Adapter(view.getContext() , list);

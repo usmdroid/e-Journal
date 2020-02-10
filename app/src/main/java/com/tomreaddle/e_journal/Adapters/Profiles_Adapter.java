@@ -17,7 +17,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.tomreaddle.e_journal.Models.model_profiles;
+import com.tomreaddle.e_journal.API.Model.InfoData;
 import com.tomreaddle.e_journal.R;
 
 import java.util.List;
@@ -25,13 +25,12 @@ import java.util.List;
 public class Profiles_Adapter extends RecyclerView.Adapter<Profiles_Adapter.MyViewHolder>{
 
     Context context;
-    List<model_profiles> data;
+    List<InfoData> data;
     AlertDialog alertDialog;
     AlertDialog.Builder builder;
-    String[] alertMenu = {"O'chirish"};
 
 
-    public Profiles_Adapter(Context context, List<model_profiles> data) {
+    public Profiles_Adapter(Context context, List<InfoData> data) {
         this.context = context;
         this.data = data;
     }
@@ -82,9 +81,9 @@ public class Profiles_Adapter extends RecyclerView.Adapter<Profiles_Adapter.MyVi
         holder.back_item_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, data.get(position).getName()+"\n"
-                        + data.get(position).getSchool() + "maktab\n"
-                        + data.get(position).getClass_num() + "sinf",
+                Toast.makeText(context, data.get(position).getFirst_name()+" " + data.get(position).getLast_name()+"\n"
+                        + data.get(position).getSchool_name()+ "maktab\n"
+                        + data.get(position).getClass_name() + "sinf",
                         Toast.LENGTH_SHORT).show();
             }
         });
