@@ -31,19 +31,33 @@
     <string name="login_done" translatable="true">Успешно добавлено</string>
 
     <!-- Info Profile -->
-    <string name="school" translatable="false">Школа</string>
-    <string name="class_num" translatable="false">Класс</string>
+    <string name="school" translatable="false">Школа: 301</string>
+    <string name="class_num" translatable="false">Класс: 4-A</string>
     <string name="login">Войти в систему</string>
     <string name="add">Войти</string>
+
 
     <!-- MENU -->
     <string name="main">Главный</string>
     <string name="news">Новости</string>
     <string name="info">Информация</string>
-    <string name="faq_text">Программа в данный момент находится в тестовом режиме. Пробелы работают на данных</string>
+    <string name="faq_text">Программа в данный момент находится в тестовом режиме. Пробелы работают на данных. В разделе Настройки: \n * Уведомление, \n* Ночные службы\n не работают должным образом</string>
     <string name="upload_error">Ошибка при получении данные</string>
     <string name="connecting_error">Ошибка подключения</string>
     <string name="sub_davomat">Пропущенные уроки</string>
+    <string name="news_school">Школьные новости</string>
+    <string name="notes_school">Уведомление</string>
+    <string name="fio">Ф.И.О.</string>
+    <string name="phone_number_feedback">Контактный номер</string>
+    <string name="enter_feedback">Введите ваши предложения и жалобы ...</string>
+    <string name="send_feedback">Отправить</string>
+    <string name="back">Вернуться в главное меню</string>
+    <string name="feedback">Обратная связь</string>
+    <string name="sent_feedback">Доставлено!</string>
+    <string name="today_rank">Уроки сегодняшнего дня</string>
+    <string name="tomorrow_task">Завтрашние уроки</string>
+    <string name="adress_school">Сергелийский район, Ташкент</string>
+    <string name="adress_full_school">Ташкент, Сергелийский район, Сергели 8-А, Эзгулик МФЮ</string>
 
 
 </resources>

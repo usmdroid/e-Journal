@@ -43,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
                     android:textSize="18dp"
-                    android:text="Maktab: 301"
+                    android:text="@string/school"
                     android:layout_alignParentLeft="true"/>
 
                 <TextView
@@ -52,7 +52,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
                     android:textSize="18dp"
-                    android:text="Sinf: 6 A"
+                    android:text="@string/class_num"
                     android:layout_alignParentRight="true"/>
                 </RelativeLayout>
             </LinearLayout>
@@ -118,7 +118,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sergeli tumani, Toshkent"
+                    android:text="@string/adress_school"
                     android:textColor="@color/black"
                     android:textSize="20dp"
                     android:id="@+id/adress"/>
@@ -126,7 +126,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Toshkent shahar, Sergeli tuman, Sergeli 8-A, Ezgulik MFY"
+                    android:text="@string/adress_full_school"
                     android:textColor="@color/black"
                     android:layout_marginTop="20dp"
                     android:paddingRight="10dp"

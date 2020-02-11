@@ -17,21 +17,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="?attr/actionBarSize"
-            android:layout_height="?attr/actionBarSize"
-            android:id="@+id/back_feedback_1"
-            android:src="@drawable/ic_back"
-            android:padding="15dp"
-            />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:layout_marginRight="?attr/actionBarSize"
-            android:text="Qayta aloqa"
+            android:text="@string/feedback"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:background="@color/toolbar_day"
+            android:textColor="@color/white"
             android:textSize="36sp" />
 
     </LinearLayout>
@@ -44,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:background="@drawable/feedback_back_active"
-        android:hint="F.I.O."
+        android:hint="@string/fio"
         android:padding="10dp"
         android:textColor="@color/black"
         android:textColorHint="@color/feedback_light"
@@ -57,7 +49,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:id="@+id/checkbox_feedback"
-        android:text="Bog'lanish uchun"
+        android:text="@string/phone_number_feedback"
         android:textColor="@color/feedback_dark"
         android:buttonTint="@color/feedback_light"
         />
@@ -84,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:background="@drawable/feedback_back_active"
-        android:hint="Taklif va shikoyatlaringizni kiriting..."
+        android:hint="@string/enter_feedback"
         android:minHeight="150dp"
         android:maxHeight="200dp"
         android:padding="10dp"
@@ -99,7 +91,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/feedback_send_button"
-        android:text="Jo'natish"
+        android:text="@string/send_feedback"
         android:id="@+id/feedback_send_button"
         android:textSize="20dp"
         android:layout_marginLeft="70dp"
@@ -112,7 +104,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#0000"
-        android:text="Ortga qaytish"
+        android:text="@string/back"
         android:id="@+id/back_feedback_2"
         android:textSize="14dp"
         android:textColor="#FFDB3838"

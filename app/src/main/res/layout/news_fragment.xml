@@ -5,20 +5,50 @@
     android:background="@color/white"
     >
 
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:id="@+id/news_layout"-->
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="@string/news_school"-->
+<!--            android:gravity="center"-->
+<!--            android:textSize="30dp"-->
+<!--            android:background="@color/toolbar_day"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            />-->
+<!--        -->
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/news_school_recycler"/>-->
+
+<!--    </LinearLayout>-->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingTop="10dp"
         >
 
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewpager"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/notes_school"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:background="@color/toolbar_day"
+            android:layout_marginBottom="10dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingStart="30dp"
-            android:paddingTop="10dp"
-            android:paddingEnd="30dp" />
+            android:id="@+id/notes_school_recycler"/>
 
     </LinearLayout>
 

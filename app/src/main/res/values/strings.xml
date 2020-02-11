@@ -32,8 +32,8 @@
     <string name="login_done" translatable="true">Profil qo\'shildi</string>
 
     <!-- Info Profile -->
-    <string name="school" translatable="false">Maktab</string>
-    <string name="class_num" translatable="false">Sinf</string>
+    <string name="school" translatable="true">Maktab: 301</string>
+    <string name="class_num" translatable="true">Sinf: 6-A</string>
     <string name="login">Tizimga kirish</string>
     <string name="add">Kirish</string>
 
@@ -42,9 +42,22 @@
     <string name="main">Asosiy</string>
     <string name="news">Yangiliklar</string>
     <string name="info">Ma\'lumot</string>
-    <string name="faq_text">Dastur hozirda test rejimda ishlamoqda. Kamchiliklar ma\'lumotlar ustida ishlanmoqda</string>
+    <string name="faq_text">Dastur hozirda test rejimda ishlamoqda. Kamchiliklar ma\'lumotlar ustida ishlanmoqda.\n Sozlamalar bo\'limida: \n  *E\'lonlar \n  *Tungi rejim \n servislari to\'la ishlamayapti</string>
     <string name="upload_error">Ma\'lumot olishda xatolik</string>
     <string name="connecting_error">Bo\'glanishda xatolik</string>
     <string name="sub_davomat">Qoldirilgan darslar</string>
+    <string name="news_school">Maktab yangiliklari</string>
+    <string name="notes_school">E\'lonlar</string>
+    <string name="fio">F.I.O.</string>
+    <string name="phone_number_feedback">Bog\'lanish uchun</string>
+    <string name="enter_feedback">Taklif va shikoyatlaringizni kiriting...</string>
+    <string name="send_feedback">Jo\'natish</string>
+    <string name="back">Bosh menyuga qaytish</string>
+    <string name="feedback">Qayta aloqa</string>
+    <string name="sent_feedback">Muvaffaqiyatli jo\'natildi!</string>
+    <string name="today_rank">Bugungi darslar</string>
+    <string name="tomorrow_task">Ertangi darslar</string>
+    <string name="adress_school">Sergeli tumani, Toshkent</string>
+    <string name="adress_full_school">Toshkent shahar, Sergeli tuman, Sergeli 8-A, Ezgulik MFY</string>
 
 </resources>

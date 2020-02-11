@@ -18,7 +18,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Bugungi darslar"
+                android:text="@string/today_rank"
                 android:id="@+id/today_tasks"
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp"
@@ -27,7 +27,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ertangi darslar"
+                android:text="@string/tomorrow_task"
                 android:id="@+id/tomorrow_tasks"
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp"

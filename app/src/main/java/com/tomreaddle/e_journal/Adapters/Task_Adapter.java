@@ -43,8 +43,9 @@ public class Task_Adapter extends RecyclerView.Adapter<Task_Adapter.MyViewHolder
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-//        holder.subject.setText(data.get(position).getSubject());
-//        holder.task.setText(data.get(position).getTask());
+        holder.task.setText(data.get(position).getTask());
+        holder.subject.setText(data.get(position).getSubject());
+        holder.time.setText(data.get(position).getTime());
 
     }
 
@@ -57,6 +58,7 @@ public class Task_Adapter extends RecyclerView.Adapter<Task_Adapter.MyViewHolder
 
         TextView subject;
         TextView task;
+        TextView time;
 
 
         public MyViewHolder(View itemView){
@@ -64,6 +66,7 @@ public class Task_Adapter extends RecyclerView.Adapter<Task_Adapter.MyViewHolder
 
             subject = (TextView) itemView.findViewById(R.id.subject_name);
             task = (TextView) itemView.findViewById(R.id.subject_task);
+            time = (TextView) itemView.findViewById(R.id.time);
 
         }
 

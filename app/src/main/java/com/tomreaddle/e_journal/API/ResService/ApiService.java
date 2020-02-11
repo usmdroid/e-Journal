@@ -1,13 +1,18 @@
 package com.tomreaddle.e_journal.API.ResService;
 
 import com.tomreaddle.e_journal.API.Model.AttendanceData;
+import com.tomreaddle.e_journal.API.Model.FeedbackData;
+import com.tomreaddle.e_journal.API.Model.FeedbackResponse;
 import com.tomreaddle.e_journal.API.Model.InfoData;
 import com.tomreaddle.e_journal.API.Model.LoginData;
 import com.tomreaddle.e_journal.API.Model.TeacherData;
 import com.tomreaddle.e_journal.API.Model.TimeTable;
 import com.tomreaddle.e_journal.API.Model.TokenData;
 import com.tomreaddle.e_journal.Attendance;
+import com.tomreaddle.e_journal.Feedback;
+import com.tomreaddle.e_journal.Models.model_news_item;
 import com.tomreaddle.e_journal.Models.model_today_rank;
+import com.tomreaddle.e_journal.Models.model_tomorrow_task;
 
 import java.util.List;
 
@@ -22,6 +27,9 @@ public interface ApiService {
 
     @POST("login")
     Call<TokenData> login(@Body LoginData loginData);
+
+    @POST("suggest/faq")
+    Call<FeedbackResponse> feedback(@Body FeedbackData feedbackData);
 
 
 //    @Headers("Accept: application/json")
@@ -48,4 +56,9 @@ public interface ApiService {
     @GET("demos/e-journal/AttendanceData")
     Call<List<AttendanceData>> getAttendanceData();
 
+    @GET("demos/e-journal/notification")
+    Call<List<model_news_item>> getNotificationData();
+
+    @GET("demos/e-journal/tomorrowTasks")
+    Call<List<model_tomorrow_task>> getTomorrowTasks();
 }
